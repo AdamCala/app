@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flask Demo</title>
+  </head>
+  <body>
+    <h1>Flask Demo V6</h1>
+    <p>Try the API: <a href="/api/add?a=2&b=3">/api/add?a=2&b=3</a></p>
+    <form action="/hello/" method="get" onsubmit="event.preventDefault(); location.href='/hello/'+encodeURIComponent(this.name.value);">
+      <input name="name" placeholder="Your name" />
+      <button type="submit">Say hello</button>
+    </form>
+  </body>
+</html>
